@@ -1,0 +1,95 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e1e1e;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ff1744, #ff8f00);
+    color: white;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #d50000, #ff6d00);
+    transform: scale(1.05);
+}
+
+#bars-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 80%;
+    height: 300px;
+    background: #212121;
+    border: 3px solid #ff1744;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(255, 23, 68, 0.5);
+}
+
+.bar {
+    width: 30px;
+    margin: 3px;
+    background: linear-gradient(180deg, #ff8f00, #ff3d00);
+    transition: height 0.3s, background 0.3s;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(255, 87, 34, 0.6);
+}
+
+.bar.active {
+    background: linear-gradient(180deg, #651fff, #d500f9);
+    box-shadow: 0px 0px 15px rgba(103, 58, 183, 0.9);
+}
+
+.bar.sorted {
+    background: linear-gradient(180deg, #00e676, #1de9b6);
+    box-shadow: 0px 0px 15px rgba(0, 230, 118, 0.9);
+}
+
+#array-container {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff9100;
+    text-shadow: 0px 0px 10px rgba(255, 145, 0, 0.8);
+}
+
+#log-container {
+    margin-top: 15px;
+    width: 80%;
+    height: 180px;
+    overflow-y: auto;
+    border: 2px solid #ff1744;
+    background: #2e2e2e;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(255, 23, 68, 0.4);
+}
+
+#log-container p {
+    margin: 5px 0;
+    padding: 6px;
+    background: linear-gradient(45deg, #ff9100, #ff1744);
+    border-left: 5px solid #ff3d00;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 2px 8px rgba(255, 87, 34, 0.5);
+}
